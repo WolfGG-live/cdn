@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "name": "wolfgg-cdn",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WolfGG-live/cdn.git"
+  },
+  "keywords": [
+    "wolfgg",
+    "cdn"
+  ],
+  "author": "MrlolDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WolfGG-live/cdn/issues"
+  },
+  "homepage": "https://github.com/WolfGG-live/cdn#readme",
+  "description": ""
+}

@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+$black: #212121;
+$dark-grey: #2b2b2b;
+$grey: #323232;
+$light-grey: #F1F1F1;
+$white: #ffffff;
+$color: #57B1E4;
+$light-color: #5cbcf3;
+$dark-color: #4180a4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Scroll Bar*/
+::-webkit-scrollbar {
+    width: 0px;
+}
