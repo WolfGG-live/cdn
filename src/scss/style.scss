@@ -87,6 +87,7 @@ body:before {
     font-size: 1.25rem;
 	letter-spacing: 1px;
 	font-weight: bold;
+    outline: none;
 	cursor: pointer;
 	transition: all 150ms ease;
 	&:active {
