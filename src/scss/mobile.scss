@@ -11,6 +11,17 @@ $dark-color: #4180a4;
 body {
     background: $grey;
 }
+body[gradient="true"]:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1; 
+	background:$color;
+	 background: linear-gradient(60deg, $color 0%, $light-color 100%) ;
+}
 * {
     margin: 0;
     padding: 0;

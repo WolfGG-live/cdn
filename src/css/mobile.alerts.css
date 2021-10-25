@@ -1,0 +1,76 @@
+/* General */
+.alert {
+  background: #212121;
+  color: #ffffff;
+  position: absolute;
+  margin-top: 1vh;
+  margin-left: 2.5vw;
+  border-radius: 0.25rem;
+  z-index: 1;
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.2);
+  min-height: 14vh;
+  height: fit-content;
+  width: 95vw;
+}
+
+/* Content */
+.alert-content {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  font-size: 1.25rem;
+}
+
+.alert-content p {
+  font-weight: bold;
+  margin-left: 2vw;
+}
+
+.alert-content i {
+  position: relative;
+  top: -2vh;
+}
+
+.alert-content i[type=error] {
+  color: #F35C5C;
+  font-size: 6rem;
+}
+
+.alert-content i[type=success] {
+  color: #65F35C;
+  font-size: 5.5rem;
+}
+
+/* Time Line */
+.alert .time-line {
+  position: absolute;
+  bottom: 0;
+  height: 2vh;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  opacity: 0.8;
+  width: 100%;
+  background: #F1F1F1;
+}
+
+.alert .time-line {
+  animation: progressbar-countdown;
+  animation-duration: 40s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+}
+
+@keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    border-top-right-radius: 0.25rem;
+  }
+  100% {
+    width: 0%;
+    border-top-right-radius: 0.25rem;
+  }
+}
+
+/*# sourceMappingURL=mobile.alerts.css.map */
