@@ -518,7 +518,8 @@ a {
   content: attr(data-max);
   right: 10px;
 }
-.range__slider .length__title::after {
+
+.length__title::after {
   content: attr(data-length);
   position: absolute;
   right: -45px;
@@ -527,9 +528,6 @@ a {
 }
 
 .field-title {
-  position: absolute;
-  top: -6vh;
-  right: 0;
   transform: translateY(-50%);
   font-weight: 800;
   color: rgba(255, 255, 255, 0.5);

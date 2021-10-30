@@ -471,6 +471,7 @@ border-radius: 8px;
 	content: attr(data-max);
 	right: 10px;
 }
+}
 .length__title::after {
 	content: attr(data-length);
 	position: absolute;
@@ -478,11 +479,7 @@ border-radius: 8px;
 	font-variant-numeric: tabular-nums;
 	color: #fff;
 }
-}
 .field-title {
-	position: absolute;
-    top: -6vh;
-    right: 0;
     transform: translateY(-50%);
 	font-weight: 800;
 	color: rgba(255, 255, 255, 0.5);
