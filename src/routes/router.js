@@ -17,5 +17,11 @@ router.get('/js/alerts/mobile', async(req, res, next) => {
 router.get('/css/alerts/mobile', async(req, res, next) => {
     res.sendFile(path.join(__dirname, '../css/mobile.alerts.css'));
 })
+router.get('/css/rc', async(req, res, next) => {
+    res.sendFile(path.join(__dirname, '../css/rc.css'));
+})
+router.get('/js/rc', async(req, res, next) => {
+    res.sendFile(path.join(__dirname, '../js/rc.js'));
+})
 
 module.exports = router;

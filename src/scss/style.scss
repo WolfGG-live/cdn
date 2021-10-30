@@ -324,6 +324,14 @@ color: #f35c5c;
     position: absolute;
     border-radius: 50%;
 }
+.not .btn {
+    position: absolute;
+    top: 10vh;
+    right:3vw
+}
+.not .list {
+    margin-top: 6vh;
+}
 .notification {
     margin-top: 1vh;
     width: fit-content;
@@ -332,7 +340,9 @@ color: #f35c5c;
     color: #fff;
     outline: none;
     display: flex;
+    align-items: center;
     text-decoration: none;
+    padding-left: 0.5rem;
     border-radius: 0.5rem;
 }
 a {
@@ -344,10 +354,12 @@ a {
     text-decoration: none;
 }
 .notification .image {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    margin-right: 0.5vw;
     border-radius: 50%;
 }
+
  #close {
     color: #c2c2c2;
     position: relative;
