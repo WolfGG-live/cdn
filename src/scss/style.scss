@@ -546,3 +546,29 @@ $range-label-width: 60px !default;
 		}
 	}
 }
+
+/* Input & forms */
+.w-form {
+    background: $dark-grey;
+    border-radius: .25rem;
+    color: $white;
+    padding: .5rem;
+    width: fit-content;
+}
+.w-label {
+    color: $light-grey;
+}
+.w-input-group {
+    margin-top: .5vh;
+}
+.w-input {
+    background: $black;
+    border: 1px solid #161616;
+    color: $white;
+    border-radius: .25rem;
+    outline: none;
+    font-size: 1.1rem;
+    &:focus {
+        border: 1px solid $light-color;
+    }
+}

@@ -587,4 +587,33 @@ a {
   background: #d4d4d4;
 }
 
+/* Input & forms */
+.w-form {
+  background: #2b2b2b;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
+.w-label {
+  color: #F1F1F1;
+}
+
+.w-input-group {
+  margin-top: 0.5vh;
+}
+
+.w-input {
+  background: #212121;
+  border: 1px solid #161616;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+.w-input:focus {
+  border: 1px solid #5cbcf3;
+}
+
 /*# sourceMappingURL=style.css.map */
