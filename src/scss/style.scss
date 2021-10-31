@@ -572,3 +572,26 @@ $range-label-width: 60px !default;
         border: 1px solid $light-color;
     }
 }
+
+/* Cards */
+.w-cards {
+    display: flex;
+}
+.w-card {
+    cursor: pointer;
+    border: 1px solid #161616;
+    background: $dark-grey;
+    margin-right: .5vw;
+    color: $white;
+    position: relative;
+    border-radius: .25rem;
+    text-align: left;
+    align-items: left;
+    width: fit-content;
+    height:fit-content;
+    padding: 1vw;
+}
+.w-card-thumbnail {
+    width: 16vw;
+    border-radius: .25rem;
+}

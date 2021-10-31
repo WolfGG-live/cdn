@@ -616,4 +616,29 @@ a {
   border: 1px solid #5cbcf3;
 }
 
+/* Cards */
+.w-cards {
+  display: flex;
+}
+
+.w-card {
+  cursor: pointer;
+  border: 1px solid #161616;
+  background: #2b2b2b;
+  margin-right: 0.5vw;
+  color: #ffffff;
+  position: relative;
+  border-radius: 0.25rem;
+  text-align: left;
+  align-items: left;
+  width: fit-content;
+  height: fit-content;
+  padding: 1vw;
+}
+
+.w-card-thumbnail {
+  width: 16vw;
+  border-radius: 0.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */
