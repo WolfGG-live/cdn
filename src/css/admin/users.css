@@ -1,0 +1,257 @@
+.users {
+  position: relative;
+  top: 15vh;
+  left: 25vw !important;
+  color: #fff;
+}
+
+body {
+  overflow-y: scroll !important;
+}
+
+.users .user {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 0.25rem;
+  margin-bottom: 2vh;
+}
+.users .user .content {
+  display: flex;
+  background: #323232;
+  padding: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.users .user .avatar {
+  width: 60px;
+  margin-left: 1%;
+  border-radius: 50%;
+}
+
+.users .user .apps .discord {
+  background: #5865F2;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0.25rem;
+  font-size: 1rem;
+  margin-left: 1vw;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.users .user .apps .twitch {
+  background: #9146ff;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding: 0.25rem;
+  justify-content: center;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.users .user .apps .twitch[disabled=false] i {
+  font-size: 1.3rem;
+  position: relative;
+  top: 0.5vh;
+  margin-right: 0.25vw;
+}
+
+.users .user .apps .discord[disabled=false] i {
+  font-size: 1.25rem;
+  position: relative;
+  top: 0.5vh;
+  margin-right: 0.25vw;
+}
+
+.users .user .apps a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+.users .user .apps .twitch[disabled=true] {
+  background: #C095FF;
+  width: 3vw;
+  height: 3vw;
+  padding: 0;
+  font-size: 1.3rem;
+}
+
+.users .user .apps .discord[disabled=true] {
+  background: #7F89F0;
+  width: 3vw;
+  height: 3vw;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.users .user .badges {
+  margin-left: 0.25vw;
+  font-size: 0.8rem;
+}
+
+.users .user .username {
+  margin-left: 0.25vw;
+  font-size: 1.3rem;
+}
+
+.users .user .email {
+  margin-left: 1vw;
+  font-size: 1rem;
+}
+
+.users .user .points {
+  display: flex;
+  margin-left: 0.5vw;
+}
+
+.users .user .points i {
+  margin-left: 0.25vw;
+  margin-top: 0.25vh;
+}
+
+.users .user .badges .list {
+  display: flex;
+}
+
+.users .user .badges .list #badge {
+  color: #fff;
+  margin-right: 0.25vw;
+}
+
+.users .user .roles #plus {
+  margin-right: 0.5vw;
+  margin-top: 1.5vh;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.users .user .roles .role i {
+  position: relative;
+  margin-top: 1vh;
+  margin-right: 0.25vw;
+}
+
+.users .user .btn-ban:hover {
+  background: #ED5E5E;
+  transition: 0.3s;
+}
+
+.users .user .btn-ban {
+  background: #A44141;
+  height: fit-content;
+  cursor: pointer;
+  color: #fff;
+  width: fit-content;
+  border: none;
+  transition: 0.3s;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding: 0.25rem;
+  margin-top: 1.5vh;
+  justify-content: center;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+/* New code */
+.user .btn-arrow {
+  width: fit-content;
+  height: fit-content;
+  color: #F1F1F1;
+  margin-left: 1vw;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+.user .btn-arrow:hover {
+  color: #ffffff;
+}
+.user .more-info {
+  background: #212121;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  width: 100%;
+  padding-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  visibility: visible;
+  transition: all 0.3s;
+}
+.user .more-info .right-row {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  position: relative;
+}
+.user .more-info .left-row {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  margin-left: 1vw;
+}
+.user .more-info .left-row .apps {
+  width: fit-content;
+}
+.user .more-info .left-row .apps .list {
+  display: flex;
+  align-items: center;
+}
+.user .more-info .left-row .roles {
+  margin-top: 1.5vh;
+}
+.user .more-info .left-row .roles .list {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.user .more-info .left-row .roles .list .role {
+  margin-right: 0.5vw;
+  color: #fff;
+  height: fit-content;
+  background: #181b1e;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.02);
+}
+.user .more-info[active=false] {
+  height: 0;
+  visibility: hidden;
+}
+
+.search {
+  width: 40vw;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  outline: none;
+  position: absolute;
+  top: 8vh;
+  left: 40vw !important;
+  background: #212121;
+  border: 1px solid #161616;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+.search:focus {
+  border: 1px solid #5cbcf3;
+}
+
+/*# sourceMappingURL=users.css.map */

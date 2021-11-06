@@ -1,5 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/* Cards */
+.w-card {
+  background: #2b2b2b;
+  position: absolute;
+  z-index: 10;
+  color: #ffffff;
+  border-radius: 0.25rem;
+}
+.w-card .w-card-title {
+  color: #c2c2c2;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.w-card .w-card-content {
+  margin-top: 2vh;
+}
+
+.w-link {
+  text-decoration: none;
+  color: #4180a4;
+}
+.w-link:hover {
+  color: #57B1E4;
+  text-decoration: underline;
+}
+
+.w-input-group .w-input {
+  outline: none;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  background: #212121;
+  width: 80%;
+  border: 2px solid #181b1e;
+  color: #fff;
+}
+.w-input-group .w-input:focus {
+  border: 2px solid #57B1E4;
+}
+.w-input-group .w-input-label {
+  color: #c2c2c2;
+  font-size: 1.25rem;
+}
+
 body {
   background: #323232;
 }
@@ -38,6 +80,7 @@ body[gradient=true]:before {
   padding-bottom: 0.3rem;
   height: fit-content;
   width: 46vw;
+  margin-top: 1vh;
   font-size: 1.25rem;
   letter-spacing: 1px;
   outline: none;
@@ -63,17 +106,6 @@ body[gradient=true]:before {
 }
 
 /* Navbar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-html, body {
-  overflow: hidden;
-}
-
 .navbar {
   position: fixed;
   bottom: 0;
@@ -82,7 +114,7 @@ html, body {
   height: 10vh;
   transition: width 600ms ease;
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   background: #212121;
 }
 
@@ -94,7 +126,7 @@ html, body {
   height: 8vh;
   overflow: hidden;
   transition: width 600ms ease;
-  color: #fff;
+  color: #ffffff;
   background: #212121;
 }
 
@@ -142,7 +174,7 @@ html, body {
 }
 
 .topnav .page-nav[active=true] a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .topnav .page-nav[active=true] h2 {
@@ -159,10 +191,10 @@ html, body {
   position: relative;
   top: 1.5vh;
   left: 3vw;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.5rem;
   width: 78%;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .topnav .search-nav[active=true] #arrow {
@@ -241,7 +273,7 @@ html, body {
 }
 
 .nav-link {
-  color: #fff;
+  color: #ffffff;
   font-size: 0.8rem;
   display: inline;
   align-items: center;

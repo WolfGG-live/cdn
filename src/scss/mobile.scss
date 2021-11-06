@@ -1,12 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 $black: #212121;
+$dark-black: #181b1e;
 $dark-grey: #2b2b2b;
 $grey: #323232;
 $light-grey: #F1F1F1;
 $white: #ffffff;
+$dark-white: #c2c2c2;
 $color: #57B1E4;
 $light-color: #5cbcf3;
 $dark-color: #4180a4;
+
+/* Cards */
+.w-card {
+    background: $dark-grey;
+    position: absolute;
+    z-index: 10;
+    color: $white;
+    border-radius: .25rem;
+    .w-card-title {
+        color: $dark-white;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .w-card-content {
+        margin-top: 2vh;
+    }
+}
+.w-link {
+    text-decoration: none;
+    color: $dark-color;
+    &:hover {
+        color: $color;
+        text-decoration: underline;
+    }
+}
+.w-input-group {
+    .w-input {
+        outline: none;
+        border-radius: 0.25rem;
+        font-size: 1.25rem;
+        background: $black;
+        width: 80%;
+        border: 2px solid #181b1e;
+        color: #fff;
+        &:focus {
+            border: 2px solid $color;
+        }
+    }
+    .w-input-label {
+        color: $dark-white;
+        font-size: 1.25rem;
+    }
+}
 
 body {
     background: $grey;
@@ -43,6 +88,7 @@ body[gradient="true"]:before {
     padding-bottom: 0.30rem;
     height: fit-content;
     width: 46vw;
+    margin-top: 1vh;
     font-size: 1.25rem;
 	letter-spacing: 1px;
     outline: none;
@@ -65,18 +111,7 @@ body[gradient="true"]:before {
 	background-image: linear-gradient(135deg, $dark-grey 0%, $black 100%);
 }
 
-
 /* Navbar */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-html, body {
-    overflow:hidden 
-  } 
 .navbar {
     position: fixed;
     bottom: 0;
@@ -85,8 +120,8 @@ html, body {
     height: 10vh;
     transition: width 600ms ease;
     overflow: hidden;
-    color: #fff;
-    background: #212121;
+    color: $white;
+    background: $black;
 }
 .topnav {
     position: absolute;
@@ -96,8 +131,8 @@ html, body {
     height: 8vh;
     overflow: hidden;
     transition: width 600ms ease;
-    color: #fff;
-    background: #212121;
+    color: $white;
+    background: $black;
 }
 .topnav .navbar-nav[active="false"] {
     opacity: 0;
@@ -137,7 +172,7 @@ html, body {
     font-size: 2rem;
 }
 .topnav .page-nav[active="true"] a {
-    color: #fff;
+    color: $white;
 }
 .topnav .page-nav[active="true"] h2{
     position: relative;
@@ -152,10 +187,10 @@ html, body {
     position: relative;
     top: 1.5vh;
     left: 3vw;
-    color: #fff;
+    color: $white;
     font-size: 1.5rem;
     width: 78%;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
 }
 .topnav .search-nav[active="true"] #arrow {
     position: relative;
@@ -224,7 +259,7 @@ html, body {
     margin-left: 8vw;
 }
 .nav-link{
-    color: #fff;
+    color: $white;
     font-size: 0.8rem;
     display: inline;
     align-items: center;
@@ -242,3 +277,4 @@ html, body {
     width: 2rem;
     min-width: 2rem;
 }
+

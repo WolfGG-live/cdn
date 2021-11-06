@@ -5,6 +5,12 @@ const router = express.Router();
 router.get('/css/basic', async(req, res, next) => {
     res.sendFile(path.join(__dirname, '../css/style.css'));
 })
+router.get('/css/panel', async(req, res, next) => {
+    res.sendFile(path.join(__dirname, '../css/panel.css'));
+})
+router.get('/css/panel/users', async(req, res, next) => {
+    res.sendFile(path.join(__dirname, '../css/admin/users.css'));
+})
 router.get('/css/mobile', async(req, res, next) => {
     res.sendFile(path.join(__dirname, '../css/mobile.css'));
 })

@@ -12,7 +12,13 @@ if (document.addEventListener) {
         }
         rc = 'normal'
         if(e.path[0].attributes.rc != null) {
-         rc = e.path[0].attributes.rc.value
+          if(e.path[0].attributes.rcAdmin == null) {
+            rc = e.path[0].attributes.rc.value
+          } else if(e.path[0].attributes.rcAdmin.value =='true'){
+            rc = e.path[0].attributes.rc.value+'-admin'
+          } else {
+            rc = e.path[0].attributes.rc.value
+          }
         }
     
         console.log(rc)
