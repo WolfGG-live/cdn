@@ -1,5 +1,7 @@
 var nowSubMenu = null;
 var menuActive = false
+var selectedStream = null;
+var selectedUser = null;
 var rc = null;
 if (document.addEventListener) {
   document.addEventListener(
@@ -8,6 +10,8 @@ if (document.addEventListener) {
         if(menuActive == true) {
             removeMenu();
             rc = null;
+            selectedUser = null;
+            selectedStream=null
             menuActive=false
         }
         rc = 'normal'
@@ -20,7 +24,9 @@ if (document.addEventListener) {
             rc = e.path[0].attributes.rc.value
           }
         }
-    
+        if(e.path[0].attributes.rcStream != null) {
+            selectedStream = e.path[0].attributes.rcStream.value
+        }
         console.log(rc)
         menuActive = true
       drawMenu(e.pageX, e.pageY,rc);
@@ -118,3 +124,77 @@ function ptoaN(element) {
     console.log(link);
     window.open(link);
 }
+
+function CloseStream() {
+  if(selectedStream == null) return
+  var stream = selectedStream
+      var callback = async (response) => {
+          response = JSON.parse(response);
+          console.log(response);
+          if(response.error) {
+              Toast.fire({
+                  icon: 'error',
+                  title: response.message
+              })
+              return
+          }
+          if(response.success) {
+              Toast.fire({
+                  icon: 'success',
+                  title: response.message
+              })
+              return  
+          }
+      }
+      var data = {
+          stream: stream,
+      }
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = async function() {
+          if (request.readyState === 4) {
+              await callback(request.response);
+          }
+      }
+      request.open("POST", `/streams/close`);
+      request.setRequestHeader("Content-Type", "application/json");
+      request.send(JSON.stringify(data));
+  }
+  function RefundStream() {
+  if(selectedStream == null) return
+  var stream = selectedStream
+      var callback = async (response) => {
+          response = JSON.parse(response);
+          if(response.error) {
+              Toast.fire({
+                  icon: 'error',
+                  title: response.message
+              })
+              return
+          }
+          if(response.success) {
+              Toast.fire({
+                  icon: 'success',
+                  title: response.message
+              })
+              return  
+          }
+      }
+      var data = {
+          stream: stream,
+      }
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = async function() {
+          if (request.readyState === 4) {
+              await callback(request.response);
+          }
+      }
+      request.open("POST", `/streams/refund`);
+      request.setRequestHeader("Content-Type", "application/json");
+      request.send(JSON.stringify(data));
+  }
+  function CloseAndRefund() {
+  var stream = selectedStream
+      RefundStream(stream);
+      CloseStream(stream);
+  }
+  

@@ -251,7 +251,7 @@ body:before {
   width: 50px;
   position: relative;
   top: -2vh;
-  margin-left: 0.5vw;
+  margin-right: 2vw;
   cursor: pointer;
   border-radius: 50%;
 }
