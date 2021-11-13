@@ -644,11 +644,39 @@ a {
 /* Dash cards */
 .dash-columns {
   display: flex;
+  flex-direction: row;
 }
-.dash-columns .righc-c {
-  position: relative;
+.dash-columns .rigth-c {
   display: flex;
   flex-direction: column;
+}
+.dash-columns .mid-c {
+  display: flex;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+  flex-direction: column;
+}
+.dash-columns .left-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.streams-select .dash-content .dash-columns .stream-card {
+  width: 20vw;
+  height: fit-content;
+  margin-top: 2vh;
+  background: #323232;
+  border-radius: 0.5rem;
+}
+.streams-select .dash-content .dash-columns .stream-card .stream-card-header {
+  width: 100%;
+  height: 100%;
+  margin-left: 0.1vw;
+}
+.streams-select .dash-content .dash-columns .stream-card .stream-card-header h3 {
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .dash-card {
@@ -659,6 +687,7 @@ a {
   position: relative;
   border-radius: 0.25rem;
   text-align: left;
+  margin-bottom: 1vh;
   align-items: left;
   width: fit-content;
   height: fit-content;
@@ -667,6 +696,9 @@ a {
 .dash-card .dash-card-header {
   position: relative;
   top: 0vh;
+}
+.dash-card .dash-content {
+  width: fit-content;
 }
 .dash-card .columns {
   display: flex;
