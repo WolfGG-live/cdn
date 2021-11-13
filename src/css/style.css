@@ -661,22 +661,92 @@ a {
   flex-direction: column;
 }
 
-.streams-select .dash-content .dash-columns .stream-card {
-  width: 20vw;
+.streams-select {
+  cursor: pointer;
+  background: #2b2b2b;
+  color: #ffffff;
+  position: absolute;
+  top: 11vh;
+  left: 0.5vw;
+  border-radius: 0.25rem;
+  text-align: left;
+  margin-bottom: 2vh;
+  align-items: left;
+  width: fit-content;
   height: fit-content;
-  margin-top: 2vh;
+  padding: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.streams-select .dash-content {
+  width: 100%;
+  max-width: 96vw;
+  position: relative;
+}
+.streams-select .dash-content #carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.streams-select .dash-content #carousel::-webkit-scrollbar {
+  height: 0;
+}
+.streams-select .dash-content #prev,
+.streams-select .dash-content #next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+.streams-select .dash-content #prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+.streams-select .dash-content #next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.streams-select .dash-content #content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+.streams-select .dash-content .stream-card {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
   background: #323232;
+  height: fit-content;
   border-radius: 0.5rem;
+  user-select: none;
 }
-.streams-select .dash-content .dash-columns .stream-card .stream-card-header {
-  width: 100%;
-  height: 100%;
-  margin-left: 0.1vw;
+.streams-select .dash-content .stream-card .stream-card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
-.streams-select .dash-content .dash-columns .stream-card .stream-card-header h3 {
-  font-size: 1rem;
-  width: 100%;
-  height: 100%;
+.streams-select .dash-content .stream-card .stream-card-content .stream-card-points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.streams-select .dash-content .stream-card .stream-card-content .stream-card-points p {
+  margin-right: 0.25rem;
 }
 
 .dash-card {
@@ -696,9 +766,6 @@ a {
 .dash-card .dash-card-header {
   position: relative;
   top: 0vh;
-}
-.dash-card .dash-content {
-  width: fit-content;
 }
 .dash-card .columns {
   display: flex;
