@@ -782,4 +782,26 @@ a {
   flex-direction: column;
 }
 
+/* Followers & follows */
+.w-user-followers {
+  display: flex;
+  flex-direction: column;
+}
+.w-user-followers .w-user-follower {
+  display: flex;
+  margin-bottom: 2vh;
+  align-items: center;
+  background: #323232;
+  border-radius: 0.25rem;
+  width: 30vw;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+.w-user-followers .w-user-follower img {
+  border-radius: 50%;
+  width: 4vw;
+  margin-right: 0.5vw;
+  height: 4vw;
+}
+
 /*# sourceMappingURL=style.css.map */

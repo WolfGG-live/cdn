@@ -743,3 +743,24 @@ $range-label-width: 60px !default;
         }
     }
 }
+/* Followers & follows */
+.w-user-followers {
+    display: flex;
+    flex-direction: column;
+    .w-user-follower {
+        display: flex;
+        margin-bottom: 2vh;
+        align-items: center;
+        background: $grey;
+        border-radius:.25rem;
+        width: 30vw;
+        color: $white;
+        padding: .5rem;
+        img {
+            border-radius: 50%;
+            width: 4vw;
+            margin-right: .5vw;
+            height: 4vw;
+        }
+    }
+}
